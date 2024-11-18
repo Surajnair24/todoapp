@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2196f3; /* Primary blue color */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1e88e5; /* Darker blue on hover */
+}
+
+button.secondary {
+    background-color: #f44336; /* Red for secondary actions */
+}
+
+button.secondary:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+/* Project List Container */
+.project-list, .project-view {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px 0;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Input Fields */
+input[type="text"] {
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #2196f3; /* Blue border when focused */
+}
+
+/* Project Card */
+.project-card {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Todo List */
+.todo-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.todo-buttons button {
+    margin-left: 5px;
+}
+
+/* Back Button */
+.back-button {
+    background-color: #2196f3; /* Consistent blue for back button */
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #1e88e5;
+}
+
+/* Completed Todo styling */
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.completed input {
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Hover opacity */
+button:hover {
+    opacity: 0.9;
+}
+/* Add to projectviewanddashboard.css */
+
+/* Mark as Complete button - Green */
+button.mark-complete {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button.mark-complete:hover {
+    background-color: darkgreen;
+  }
+  
+  /* Remove button - Red */
+  button.remove {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button.remove:hover {
+    background-color: darkred;
+  }
+  
+  /* Completed todos should have a strikethrough and gray color */
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  .todo-date {
+    font-weight: bold;
+    margin-top: 5px; 
+    color: #333;
+  }
+  /* Welcome Message and Project Name Styling */
+.welcome-message {
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004aad;
+    text-align: center;
+    margin: 20px 0;
+    background: linear-gradient(to right, #2196f3, #21cbf3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+}
+.delete-button {
+    background-color: #f44336; /* Red color for delete */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+  }
+  
+  /* View Button Styling */
+  .view-button {
+    background-color: #2196f3; /* Blue color for view */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .view-button:hover {
+    background-color: #1e88e5; /* Darker blue on hover */
+  }

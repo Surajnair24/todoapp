@@ -1,0 +1,60 @@
+/* Center the entire page content */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* Light background color */
+}
+
+/* Center and style the main container */
+.container {
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #dedede;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for headings and text */
+h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+h5 {
+  color: #666;
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+/* Style the links */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Button-like appearance for links */
+a.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a.button-link:hover {
+  background-color: #007bff;
+  color: white;
+}
